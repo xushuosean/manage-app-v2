@@ -1,5 +1,12 @@
+import { AsyncComponentLoader, defineAsyncComponent } from 'vue';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
+
+// const a = import(`../views/md/card.md`)
+
+// console.log(a)
+
+// const component = getAsyncComponent(() => import('../views/md/card.md'))
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -19,7 +26,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */ '../views/Login/Index.vue')
-  },
+  }
 ];
 
 const router = createRouter({

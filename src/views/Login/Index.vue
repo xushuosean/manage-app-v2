@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { reactive } from 'vue';
-import { Login } from '../../utils/api/Login';
+// import { Login } from '../../utils/api/Login';
 
 export default {
   setup() {
@@ -26,9 +26,9 @@ export default {
     });
 
     const submitForm = function () {
-      Login(form).then((res) => {
-        console.log(res);
-      });
+      // Login(form).then((res) => {
+      //   console.log(res);
+      // });
     };
 
     return {
